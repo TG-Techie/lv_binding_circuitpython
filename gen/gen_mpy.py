@@ -904,13 +904,13 @@ print(
 #include "py/objtype.h"
 #include "py/objexcept.h"
 
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wunused-function"
-#pragma GCC diagnostic ignored "-Wcast-align"
-#pragma GCC diagnostic ignored "-Wnested-externs"
-#pragma GCC diagnostic ignored "-Wfloat-equal"
-#pragma GCC diagnostic ignored "-Wdiscarded-qualifiers"
-#pragma GCC diagnostic ignored "-Wstrict-prototypes"
+// # pragma GCC diagnostic push
+// # pragma GCC diagnostic ignored "-Wunused-function"
+// # pragma GCC diagnostic ignored "-Wcast-align"
+// # pragma GCC diagnostic ignored "-Wnested-externs"
+// # pragma GCC diagnostic ignored "-Wfloat-equal"
+// # pragma GCC diagnostic ignored "-Wdiscarded-qualifiers"
+// # pragma GCC diagnostic ignored "-Wstrict-prototypes"
 
 /*
  * {module_name} includes
@@ -3640,12 +3640,12 @@ STATIC const mp_lv_obj_type_t *mp_lv_obj_types[] = {{
         )
     )
 
-# turn off the previousl pushed diagnostic settings
-print(
-    """
-    #pragma GCC diagnostic pop
-    """
-)
+# # turn off the previousl pushed diagnostic settings
+# print(
+#     """
+#     #pragma GCC diagnostic pop
+#     """
+# )
 
 # Save Metadata File, if specified.
 

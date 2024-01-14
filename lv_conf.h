@@ -879,8 +879,19 @@
 /*Flex layout demo*/
 #define LV_USE_DEMO_FLEX_LAYOUT 0
 
+// CIRCUITPY_CHANGE
+// add diagnostic ignores to suppress warnings from LVGL that circuitpython enables
+// #pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-function"
+#pragma GCC diagnostic ignored "-Wcast-align"
+#pragma GCC diagnostic ignored "-Wnested-externs"
+#pragma GCC diagnostic ignored "-Wfloat-equal"
+#pragma GCC diagnostic ignored "-Wdiscarded-qualifiers"
+#pragma GCC diagnostic ignored "-Wstrict-prototypes"
+
 /*--END OF LV_CONF_H--*/
 
 #endif /*LV_CONF_H*/
+
 
 #endif /*End of "Content enable"*/
